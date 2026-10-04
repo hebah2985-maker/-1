@@ -1,0 +1,20 @@
+# data and secrets: never publish
+data/
+.env
+.streamlit/secrets.toml
+*.sqlite
+# books and scans: do not publish files you do not own the rights to
+*.pdf
+*.png
+*.jpg
+*.jpeg
+!docs/**/*.png
+# python
+__pycache__/
+*.pyc
+.venv/
+build/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
